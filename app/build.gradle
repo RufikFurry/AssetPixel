@@ -20,8 +20,7 @@ android {
     	 release {
         // Ensure that minifyEnabled is set if using ProGuard or R8
         	 minifyEnabled false
-        	 signingConfig signingConfigs.release
-    	}
+        }
     }
     
     lintOptions {
