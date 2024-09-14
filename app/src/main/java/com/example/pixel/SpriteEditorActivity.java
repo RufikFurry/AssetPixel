@@ -1,6 +1,6 @@
 package com.example.pixel;
 
-import android.view.View;  
+import android.view.*; 
 import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.SeekBar;
