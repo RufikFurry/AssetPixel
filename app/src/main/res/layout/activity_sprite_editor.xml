@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!-- Palette Section -->
+    <LinearLayout
+        android:id="@+id/palettePanel"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Custom Color Creation -->
+        <SeekBar
+            android:id="@+id/colorRed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255" />
+        <SeekBar
+            android:id="@+id/colorGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255" />
+        <SeekBar
+            android:id="@+id/colorBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255" />
+
+        <!-- Add more UI elements for palette if needed -->
+    </LinearLayout>
+
+    <!-- Drawing Area -->
+    <View
+        android:id="@+id/drawingCanvas"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#FFFFFF" />
+
+    <!-- Tools Section -->
+    <LinearLayout
+        android:id="@+id/toolsPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/toolBrush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Кисть" />
+        <Button
+            android:id="@+id/toolEraser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Стиратель" />
+        <Button
+            android:id="@+id/toolFill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Заливка" />
+        <Button
+            android:id="@+id/toolSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Выделение" />
+        <Button
+            android:id="@+id/toolMove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Перемещение" />
+
+    </LinearLayout>
+
+</LinearLayout>
